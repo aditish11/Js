@@ -10,6 +10,7 @@ accountCity="Kolkata";
 // console.log(accountId);
 /*
 Prefer not to use var because of issues in block scope and functional scope.
+Variables declared with let can be updated but not re-declared within the same scope
  */
 
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState]);
