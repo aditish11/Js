@@ -30,7 +30,31 @@ const users=[
 
 // console.log(users[1].mail)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty("name"))
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty("name"))
+
+const course={
+    courseName:"Js",
+    price:"999",
+    courseInstructor:"Potter"
+}
+
+const {courseInstructor : instructor}=course
+console.log(instructor)
+
+/*
+{
+    "name":"Harry",
+    "id":123
+} 
+JSON response by an API
+
+or [
+    {},
+    {},
+    {}
+]
+response can be like this also
+*/
