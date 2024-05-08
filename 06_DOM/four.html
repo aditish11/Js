@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM learning</title>
+</head>
+<body style="background-color: #212121; color: rgb(218, 227, 235);">
+  <ul class="language">
+    <li>JavaScript</li>
+  </ul>
+</body>
+<script>
+  function addLang(lang){
+    const element=document.querySelector('.language')
+    const newLang=document.createElement('li')
+    newLang.innerText=lang
+    element.appendChild(newLang)
+  }
+  addLang("Python")
+  addLang("C++")
+
+  function addOptiLang(lang){
+    const li=document.createElement('li')
+    li.appendChild(document.createTextNode(lang))
+    document.querySelector('.language').appendChild(li)
+  }
+  addOptiLang("golang")
+
+  //EDIT
+  const secondLang=document.querySelector("li:nth-child(2)")
+  //secondLang.innerHTML="ruby"//not optimised approach
+
+ const newLi= document.createElement('li')
+ newLi.textContent="ruby"
+ ////***** REPLACE WITH 
+ secondLang.replaceWith(newLi)
+ ///****
+
+ const firstLang=document.querySelector("li:nth-child(1)")
+ firstLang.outerHTML='<li>TypeScript</li>'
+
+
+ ///REMOVE
+ const lastLang=document.querySelector('li:last-child')
+ lastLang.remove()
+
+
+</script>
+</html>
