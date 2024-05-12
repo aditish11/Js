@@ -9,6 +9,7 @@ class User{
 
 }
 
+
 class Teacher extends User {
   constructor(username, email, password) {
     super(username);
@@ -31,3 +32,4 @@ mathsTeacher.logMe()
 
 console.log(mathsTeacher instanceof Teacher)
 console.log(engTeacher instanceof User)
+
